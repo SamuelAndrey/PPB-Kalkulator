@@ -11,12 +11,14 @@
         android:id="@+id/edit_value1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"
         android:hint="Masukkan nilai 1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/edit_value2"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/judul" />
 
     <EditText
         android:id="@+id/edit_value2"
@@ -111,5 +113,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_result" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Kalkulator"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_value1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

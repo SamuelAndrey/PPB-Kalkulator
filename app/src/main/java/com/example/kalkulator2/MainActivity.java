@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         textResult = findViewById(R.id.text_result);
         radioOperators = findViewById(R.id.radio_operators);
 
-        preferences = this.getSharedPreferences("test2", Context.MODE_PRIVATE);
+        preferences = this.getSharedPreferences("hisotry", Context.MODE_PRIVATE);
         recRiwayat = findViewById(R.id.rvRiwayat);
 
         listRiwayat = new ArrayList<>();
