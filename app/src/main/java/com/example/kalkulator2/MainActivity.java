@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         setupListener();
         showArray();
 
-
         if (listRiwayat.size() == 0) {
             id = 1;
         } else {
