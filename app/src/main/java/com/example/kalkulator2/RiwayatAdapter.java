@@ -52,10 +52,6 @@ public class RiwayatAdapter extends RecyclerView.Adapter<RiwayatAdapter.ViewHold
 
             riwayat = itemView.findViewById(R.id.txtRwyt);
 
-            // masih terdapat bug, jika baru membuka aplikasi dan terdapat histori yang tersimpan
-            // jika mencoba mendelete data yang pertama terinput (paling bawah di recyclerview), aplikas akan force close
-            // tapi jika masuk ke aplikasi data tetap terhapus
-
             itemView.setOnLongClickListener(view -> {
 
                 int p = getLayoutPosition();
@@ -71,8 +67,10 @@ public class RiwayatAdapter extends RecyclerView.Adapter<RiwayatAdapter.ViewHold
                             for (int j=0;j<listRiwayat.size();j++){
                                 if (id.equalsIgnoreCase(listRiwayat.get(j).getId())){
                                     listRiwayat.remove(j);
+                                    notifyItemRemoved(j);
                                     notifyItemChanged(j);
                                     notifyItemRangeChanged(j, listRiwayat.size());
+
                                 }
                             }
                         });

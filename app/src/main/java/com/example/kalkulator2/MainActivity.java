@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             String value =preferences.getString(id,"");
             getArray(id,value);
             temp++;
+            this.id++;
         }catch (Exception e){
             e.printStackTrace();
         }
