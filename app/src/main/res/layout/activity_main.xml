@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:hint="Masukkan nilai 1"
-        android:textStyle="bold"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/edit_value2"
         app:layout_constraintEnd_toEndOf="parent"
